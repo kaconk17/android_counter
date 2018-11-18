@@ -45,4 +45,7 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
     }
+
+    public void resetnumber(View view) {
+    }
 }
