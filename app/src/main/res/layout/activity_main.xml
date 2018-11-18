@@ -41,34 +41,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:paddingBottom="10dp">
 
-    <Button
-        android:id="@+id/btn_count"
-        android:layout_width="wrap_content"
-        android:layout_height="100sp"
-        android:text="@string/btn_label_count"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:onClick="countUp"/>
+        <Button
+            android:id="@+id/btn_count"
+            android:layout_width="114dp"
+            android:layout_height="100sp"
+            android:background="@color/colorPrimary"
+            android:onClick="countUp"
+            android:text="@string/btn_label_count"
+            android:textColor="@android:color/white" />
+
+        <Space
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/btn_minus"
-            android:layout_width="wrap_content"
+            android:layout_width="114dp"
             android:layout_height="100sp"
-            android:text="@string/btn_label_minus"
             android:background="@color/colorPrimary"
-            android:textColor="@android:color/white"
-            android:onClick="countDown"/>
+            android:onClick="countDown"
+            android:text="@string/btn_label_minus"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
     <Button
         android:id="@+id/btn_reset"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
+
         android:text="@string/label_reset"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
