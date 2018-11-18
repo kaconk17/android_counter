@@ -47,5 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetnumber(View view) {
+        mCount=0;
+        mShowCount.setText(Integer.toString(mCount));
     }
 }
